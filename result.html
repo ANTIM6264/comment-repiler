@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Replies</title></head>
+<body>
+    <h2>AI Replies to YouTube Comments</h2>
+    {% for original_comment, reply in zip(original, comments) %}
+        <div>
+            <p><b>Comment:</b> {{ original_comment }}</p>
+            <p><b>Reply:</b> {{ reply }}</p>
+            <hr>
+        </div>
+    {% endfor %}
+    <a href="/">← Back</a>
+</body>
+</html>
